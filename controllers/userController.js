@@ -42,7 +42,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    // Delete a user and remove them from the course
+    // Delete a user
     async deleteUser(req, res) {
         try {
             const user = await User.findOneAndRemove({ _id: req.params.userId });
@@ -50,19 +50,6 @@ module.exports = {
             if (!user) {
                 return res.status(404).json({ message: 'No such user exists' });
             }
-
-            // const course = await Course.findOneAndUpdate(
-            //     { users: req.params.userId },
-            //     { $pull: { users: req.params.userId } },
-            //     { new: true }
-            // );
-
-            // if (!course) {
-            //     return res.status(404).json({
-            //         message: 'User deleted, but no courses found',
-            //     });
-            // }
-
             res.json({ message: 'User successfully deleted' });
         } catch (err) {
             console.log(err);
