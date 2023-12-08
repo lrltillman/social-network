@@ -28,7 +28,7 @@ I was not able to complete this assignment to the degree that I originally wante
 
 ## Walkthrough video
 
-[Link to video here](chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/63acf824-0e28-489a-y985-60f036497083)
+[Link to video here](https://drive.google.com/file/d/1DxZa8z8ad3aPmfMsJj70-0jEoJMBT-Sm/view)
 
 ## Collaborators
 
