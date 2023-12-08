@@ -12,9 +12,9 @@ router.route("/").get(getUsers).post(createUser);
 
 router.route("/:userId").get(getSingleUser).put(updateUser).delete(deleteUser)
 
-router.route("/api/users/:userId/friends").post(createUser)
+router.route("/users/:userId/friends").post(createUser)
 
-router.route("/api/users/:userId/friends/:friendId").delete(deleteUser);
+router.route("/users/:userId/friends/:friendId").delete(deleteUser);
 
 module.exports = router;
 
